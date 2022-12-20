@@ -1,20 +1,13 @@
 #include<stdio.h>
-int is_palndrm(int);
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	printf("%d",is_palndrm(n));	
-}
-int is_palndrm(int m)
-{
-	int q,r,s=0;
-	q=m;
-	while(q!=0)
-	{
-		r=q%10;
-		s=s*10+r;
-		q=q/10;	
-	}
-	return s;
+    int n,i,r=0,s=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    printf("%d",s);
 }
