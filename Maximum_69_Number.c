@@ -28,4 +28,5 @@ int main()
         l=9;
     }
     printf("%d%d%d%d",f,s,t,l);
+    
 }
