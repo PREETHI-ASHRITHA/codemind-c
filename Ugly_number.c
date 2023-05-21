@@ -1,51 +1,35 @@
 #include<stdio.h>
 int main()
 {
-	int n,q,c=0;
-	scanf("%d",&n);
-	q=n;
-	if(q>0)
-	{
-		while(q!=0)
-		{
-			if(q%2==0)
-			{
-				q=q/2;
-			}
-			else if(q%3==0)
-			{
-				q=q/3;
-			}
-			else if(q%5==0)
-			{
-				q=q/5;
-			}
-			else
-			{
-				c++;
-				break;
-			}
-		}
-		if(c=1)
-		{
-		if(q==1)
-		{
-			printf("Ugly Number");
-		}
-		else
-		{
-			printf("Not Ugly Number");
-		}
-		}
-		else
-		{
-			printf("Ugly Number");
-		}
-		
-	}
-	else
-	{
-		printf("Not Ugly Number");
-	}
-	
+    int v,k=0;
+    scanf("%d",&v);
+    while(v!=1)
+    {
+        if(v%2==0)
+        {
+            v/=2;
+        }
+        else if(v%3==0)
+        {
+            v/=3;
+        }
+        else if(v%5==0)
+        {
+            v/=5;
+        }
+        else
+        {
+            k++;
+            break;
+        }
+    } 
+    if(k!=0)
+    {
+        printf("Not Ugly Number");
+    }
+    else
+    {
+        printf("Ugly Number");
+    }
+    
 }
